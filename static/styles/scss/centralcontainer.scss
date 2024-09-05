@@ -1,0 +1,26 @@
+@use 'var' as *;
+
+.left-container{
+    width: 15%;
+    display: inline-block;
+}
+.maincontainer{
+width: 80%;
+display: inline-block;
+}
+.structure{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+@media(max-width:$breakpoint){
+.structure{
+    flex-direction: column;
+}
+.maincontainer{
+    width: 100%;
+}
+.left-container{
+    width: 100%;
+}
+}

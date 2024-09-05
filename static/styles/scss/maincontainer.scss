@@ -1,0 +1,115 @@
+@use 'var' as *;
+*{
+    margin: 0;
+        padding: 0;
+        font-family: "Nerko One", cursive;
+    }
+body{
+    background-color: $secondColor;
+}
+.block{
+    background-color:$thirdColor;
+    padding: 0.5em;
+    border-radius: 1.5em;
+    border-bottom-style: solid;
+    margin-top: 1em;
+    &-friends{
+        background-color:$thirdColor;
+    padding: 0.5em;
+    border-radius: 1.5em;
+    border-bottom-style: solid;
+    margin-top: 1em;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+    }
+}   
+
+.block h2{
+    font-size: 2em;
+    color: $firstColor;
+}
+
+.block p{
+    font-size: 1.5em;
+}
+.button{
+    
+    padding: 0.5em;
+    border-radius: 1em;
+    display: flex;
+    flex-direction:  row;
+    &-noimg{
+        padding: 0.5em;
+        border-radius: 1em;
+        display: flex;
+        flex-direction: column;
+    }
+}
+.button:hover, .button-noimg:hover{
+    background-color: $secondColor;
+    cursor: pointer;
+}
+.button img{
+    width: 5em;
+    padding-right: 1em;
+}
+.central-img{
+    text-align: center;
+}
+.central-buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: space-between;
+    justify-content: space-between;
+}
+.rigth-button,
+.left-button{
+    border-radius: 1em;
+    width: 50%;
+    text-align: center;
+}
+.rigth-button:hover,
+.left-button:hover{
+    background-color: $secondColor;
+    cursor: pointer;
+}
+.logo{
+    border-radius: 5em;
+    width: 100%;
+}
+.card{
+    text-align: center;
+    border-radius: 2em;
+    width: 30%;
+    padding: 0.5em;
+    border-style: solid;
+}
+.card:hover{
+    background-color: $secondColor;
+    cursor: pointer;
+}
+.top-post>img{
+    border-radius: 100%;
+    width: 20%;
+    margin: 1em;
+    border-style: solid;
+}
+.text-post{
+    display:flex;
+    flex-direction: column;
+}
+.text-post h2{
+    font-size: 4em;
+}
+.text-post p{
+    font-size: 2em;
+}
+.top-post{
+    display:flex;
+    flex-direction: row;
+}
+.post-img{
+    width: 100%;
+    border-radius: 1em;
+}

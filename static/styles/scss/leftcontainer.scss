@@ -1,0 +1,22 @@
+@use 'var' as *;
+
+.btn{
+    margin: 0.5em;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: row;
+    transition: background-color 0.2s ease;
+}
+.icons>img{
+    width: 5em;
+    padding: 1em;
+
+}
+.btn-text>p{
+    font-size: 3em;
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+}
+.btn:hover{
+    background-color: $thirdColor;
+}

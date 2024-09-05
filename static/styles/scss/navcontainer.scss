@@ -1,0 +1,70 @@
+@use 'var' as *;
+
+.nav{
+    &-fb{
+        display: flex;
+        flex-direction: row;
+        width: 25%;
+    }
+    &-img>img{
+        margin-top: 0.5em;
+        width: 4em;
+        margin-left: 0.5em;
+    }
+    
+}
+.main-input{
+    margin-top:0.2em ;
+    width: 100%;
+    height: 80%;
+    border-radius: 5em;
+    font-size: 2em;
+}
+.logo-img>img{
+    width: 4em;
+    padding-inline: 2em;
+}
+.logo-box{
+    margin: 0.5em;
+    display: flex;
+    flex-direction: row;
+
+}
+.logo-img{
+    border-bottom-style:solid ;
+    border-color: $thirdColor;
+}
+.logo-img:hover{
+    border-color: $firstColor;
+    
+}
+.logotype>img{
+    border-radius: 5em;
+    width: 5em;
+}
+.navcontainer{
+    padding: 0.5em;
+    background-color: $thirdColor;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.nav-logo{
+    width: 25%;
+}
+.logotype{
+    text-align: right;
+}
+.workbutton>p{
+    font-size: 4em;
+    cursor: pointer;
+    display: none;
+    border-radius: 15%;
+    padding-inline: 0.2em;
+    background-color: $secondColor;
+}
+@media(max-width:$breakpoint){
+    .nav-input{
+        display: none;
+    }
+}
